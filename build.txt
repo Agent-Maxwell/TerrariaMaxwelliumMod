@@ -1,0 +1,3 @@
+displayName = Maxwellium Mod
+author = Agent_Maxwell
+version = 0.1
