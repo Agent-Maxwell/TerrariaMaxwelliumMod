@@ -7,22 +7,22 @@ namespace MaxwelliumMod.Items
 	{
 		public override void SetStaticDefaults() 
 		{
-			// DisplayName.SetDefault("theWeapon"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("This is a basic modded sword.");
+			DisplayName.SetDefault("Maxwellium Sword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			Tooltip.SetDefault("seems incomplete...");
 		}
 
 		public override void SetDefaults() 
 		{
-			item.damage = 50;
+			item.damage = 500000;
 			item.melee = true;
-			item.width = 40;
-			item.height = 40;
-			item.useTime = 20;
-			item.useAnimation = 20;
-			item.useStyle = 1;
+			item.width = 80;
+			item.height = 80;
+			item.useTime = 5;
+			item.useAnimation = 5;
+			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 6;
 			item.value = 10000;
-			item.rare = 2;
+			item.rare = ItemRarityID.Green;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
@@ -30,8 +30,8 @@ namespace MaxwelliumMod.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(ModContent.ItemType<MaxwelliumIngot>(), 15);
+			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

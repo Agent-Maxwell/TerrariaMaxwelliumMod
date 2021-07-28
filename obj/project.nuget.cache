@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "m51fQwHvBbs0ckavkLyPjoT8L0203l4MmhYBsIi3htJ+dpvA6wE8fApAoCZt1qOVhHiQmxPhb9NngqBwj7k1Jw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\avonb\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\MaxwelliumMod\\MaxwelliumMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\avonb\\.nuget\\packages\\tmodloader.codeassist\\0.1.2\\tmodloader.codeassist.0.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
